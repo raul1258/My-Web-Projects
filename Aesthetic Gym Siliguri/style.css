@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+body{
+    background-image: url(./images/home-bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.navbar-nav{
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    /* padding: 2rem; */
+    /* margin-left: -1rem; */
+    /* width: 90vw; */
+    /* background: white; */
+}
+.navbar-nav a{
+    color: white;
+}
+.navbar-nav a:hover{
+    color: #FF5421;
+    background-color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.navbar-toggler-icon{
+font-size: 2.5rem;
+cursor: pointer;
+padding-left: 3rem;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+
+.btn-primary{
+    background-color:#FF5421;
+}
+.orange{
+    color:#FF5421;
+}
+.about span{
+    font-size: 2.5rem;
+    color: #FF5421;
+}
+.about h3{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.about p{
+    font-size: 1.5;
+    padding: 1rem 0;
+}
+.about ul{
+    list-style: none;
+}
+.about ul li{
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+}
+.about ul li i{
+    color: #FF5421;
+    padding-right: 0.5rem;
+}
+/* counter section css */
+.counter{
+    background:url(./images/counter-bg.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.counter h3{
+    font-size: 3rem;
+    color: #FF5421;
+}
+.counter p{
+font-size: 1.2rem;
+}
+.counter div{
+    text-align: center;
+}
+.box-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 10rem;
+}
+ /* courses */
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading span{ 
+    font-size: 2.5rem;
+    color: #FF5421;
+}
+.heading h3{
+    color: white;
+    font-size: 3rem;
+}
+.courses .box{
+    border: .1rem solid rgba(255,255,255,.2);
+    padding-bottom: 1px 1px;
+}
+/* .box .image{
+    height: 15rem;
+    overflow: hidden;
+} */
+.courses .box img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box img:hover{
+    transform: scale(0.95);
+}
+.courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+.content{
+    padding: 2rem;
+}
+.content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .icons span{
+    color: white;
+    font-size: 1rem;
+}
+span i{
+    color: #FF5421;
+    padding-right: 0.5rem;
+}
+.content h3{
+    color: white;
+}
+
+/* pricing section */
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5rem;
+    justify-content: center;
+    color: white;
+}
+.pricing .box-container h3,.price{
+    color: white;
+}
+.pricing .box{
+    padding:2rem;
+    text-align: center;
+    border: .1rem solid rgba(255,255,255,.2);
+    border-radius: .5rem;
+    
+}
+.pricing .box:nth-child(2){
+        transform: scale(1.2);
+}
+.pricing .box .list{
+    padding-top: 2rem;
+}
+.list p{
+    font-size: 1rem;
+}
+.list i{
+    padding-right: .5rem;
+    color:#FF5421;
+}
+.list .fa-times{
+    color: white;
+}
+
+/* join-us section */
+.joinus{
+    font-size: 2.5rem;
+    color: #FF5421;
+}
+
+/* trainer section */
+.trainer .container{
+    width: 70vw;
+}
+
+/* footer section */
+
+.footer{
+    background: url(./images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display: grid;
+    /* padding: 1rem 1rem; */
+    grid-template-columns:repeat(4,1fr);
+    color: white;
+}
+.footer h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.footer a{
+    font-size: .9rem;
+    padding: 0.5rem 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footer i{
+    padding-right: 0.5rem;
+    color: #FF5421;
+}
+.footer a:hover{
+    color: #FF5421;
+}
+
+
+
+
+
+
+@media (max-width :426px){
+    header{
+        background: white;
+        height: 4.5rem;
+        width:100vw;
+        position: fixed;
+    }
+    .navbar-nav{
+        margin-left: -1rem; 
+        width: 90vw; 
+        background: white; 
+    }
+    .navbar-nav a{
+        color: black;
+    }
+    
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+    }
+    .courses .box-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10% 10%;
+    }
+    .pricing .box-container{
+        display: flex;
+        padding-left: 1rem;
+    }
+    .pricing .box{
+        margin: 2%;
+    }
+    .pricing .box:nth-child(2){
+        transform: scale(1);
+    }
+    .footer .box-container{
+        display: flex;
+    }
+    .footer .box .contact-us{
+        display: flex;
+        flex-direction: column;
+        padding-right: 7%;
+        padding-left: -5%;
+    }
+    .trainer .container{
+        width: 90vw;
+    }
+
+}
