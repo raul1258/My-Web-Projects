@@ -12,9 +12,11 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <h1>CASIO</h1>
+            <div class="heading">
+            <h1>CASIO<span>15 digits</span></h1>
+            </div>
             <div class="display-screen">
-                <input type="text" class="display">
+                <input type="text" maxlength="15" class="display">
             </div>
 
             <div class="buttons">
@@ -23,7 +25,7 @@
                         <td><button class="btn btn-clear" id="clear">C</button></td>
                         <td><button class="btn " id="/" data-num="/">&#247</button></td>
                         <td><button class="btn " id="*" data-num="*">x</button></td>
-                        <td><button class="btn btn-backspace"><i class="fa-solid fa-caret-left"></i></button></td>
+                        <td><button class="btn btn-backspace" data-num=""><i class="fa-solid fa-caret-left"></i></button></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-grey" id="7" data-num="7">7</button></td>

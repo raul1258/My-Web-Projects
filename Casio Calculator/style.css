@@ -14,6 +14,7 @@ body{
 h1{
     text-align: center;
     color: white;
+    text-shadow: 0 0 10px black;
 }
 .container{
     height: 100vh;
@@ -79,9 +80,11 @@ button#equal{
 .btn-clear{
     background: rgb(239, 83, 83);
 }
-p{
+span{
     font-size: 10px;
     text-align: right;
-    padding :.1rem;
-    color: rgb(192, 246, 133);
+    /* padding :.1rem; */
+    padding-left: 8rem;
+    color: rgb(23, 24, 22);
+    text-shadow: none;
 }

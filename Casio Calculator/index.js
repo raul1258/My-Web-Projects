@@ -4,7 +4,7 @@
     let buttons = document.querySelectorAll('.btn');
     let clear = document.querySelector('.btn-clear');
     let equal = document.querySelector('.btn-equal');
-    let backspace = document.querySelector('.btn-backspace')
+    let backspace = document.querySelector('.btn-backspace');
 
     buttons.forEach(function(button){
         button.addEventListener('click', function(e){
@@ -36,8 +36,5 @@
         }else {
             display.value = display.value.slice(0, -1);  
         }
-        
-
-    })
-
+    });
 })();
