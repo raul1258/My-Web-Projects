@@ -240,7 +240,7 @@ span i{
     }
     .navbar-nav{
         margin-bottom: 1rem; 
-        width: 90vw; 
+        /* width: 90vw;  */
         background: white; 
     }
     .navbar-nav a{
@@ -284,10 +284,11 @@ span i{
 @media (max-width :812px){
     .nav-item{
         font-size: 1rem;
+        margin-bottom: 1rem;
     }
     .navbar-brand{
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 1rem 1rem;
     }
     .footer{
         font-size: 1rem;
