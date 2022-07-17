@@ -12,7 +12,8 @@ body{
 }
 .navbar-nav{
     font-size: 1.1rem;
-    margin-left: 2rem;
+    padding-top: .5rem;
+    /* margin-left: 8rem; */
     /* padding: 2rem; */
     /* margin-left: -1rem; */
     /* width: 90vw; */
@@ -88,7 +89,7 @@ font-size: 1.2rem;
 .box-container{
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    column-gap: 10rem;
+    /* column-gap: 10rem; */
 }
  /* courses */
 .heading{
@@ -189,9 +190,8 @@ span i{
 
 /* trainer section */
 .trainer .container{
-    width: 70vw;
+    width: 60vw;
 }
-
 /* footer section */
 
 .footer{
@@ -200,10 +200,10 @@ span i{
     background-position: center;
     background-attachment: fixed;
 }
-.footer .box-container{
+ .footer .box-container{
     display: grid;
-    /* padding: 1rem 1rem; */
-    grid-template-columns:repeat(4,1fr);
+     padding: 1rem 1rem;
+   grid-template-columns:repeat(4,1fr);
     color: white;
 }
 .footer h3{
@@ -233,12 +233,13 @@ span i{
 @media (max-width :426px){
     header{
         background: white;
-        height: 4.5rem;
+        height: 4rem;
         width:100vw;
         position: fixed;
+        
     }
     .navbar-nav{
-        margin-left: -1rem; 
+        margin-bottom: 1rem; 
         width: 90vw; 
         background: white; 
     }
@@ -279,4 +280,33 @@ span i{
         width: 90vw;
     }
 
+}
+@media (max-width :812px){
+    .nav-item{
+        font-size: 1rem;
+    }
+    .navbar-brand{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .footer .box-container{
+        display: flex;
+        color: white;
+    }
+    .footer .box{
+        padding: 1.5rem;
+    }
+    .pricing .box-container{
+        display: flex;   
+    }
+    .pricing .box{
+        padding:.7rem;
+        text-align: center;
+        border: .1rem solid rgba(255,255,255,.2);
+        border-radius: .5rem;
+        
+    }
 }
