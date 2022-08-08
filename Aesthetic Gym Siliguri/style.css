@@ -19,6 +19,9 @@ body{
     /* width: 90vw; */
     /* background: white; */
 }
+.navbar{
+    z-index: 1;
+}
 .navbar-nav a{
     color: white;
 }
@@ -224,10 +227,14 @@ span i{
 .footer a:hover{
     color: #FF5421;
 }
-
-
-
-
+input{
+    width:20rem;
+    border: 1px solid black;
+}
+textarea{
+    width: 20rem;
+    border: 1px solid black;
+}
 @media (max-width :426px){
     header{
         background: white;
@@ -276,6 +283,12 @@ span i{
     }
     .trainer .container{
         width: 90vw;
+    }
+    input{
+        width:70vw;
+    }
+    textarea{
+        width: 70vw;
     }
 
 }
