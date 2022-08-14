@@ -19,9 +19,6 @@ body{
     /* width: 90vw; */
     /* background: white; */
 }
-.navbar{
-    z-index: 1;
-}
 .navbar-nav a{
     color: white;
 }
@@ -202,6 +199,7 @@ span i{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100vw;
 }
  .footer .box-container{
     display: grid;
@@ -235,18 +233,22 @@ textarea{
     width: 20rem;
     border: 1px solid black;
 }
-@media (max-width :426px){
+@media (max-width :800px){
     header{
         background: white;
         height: 4rem;
         width:100vw;
-        position: fixed;
+        position: sticky;
+        top: 0;
+        z-index: 1;
         
     }
     .navbar-nav{
         margin-bottom: 1rem; 
         /* width: 90vw;  */
         background: white; 
+        width: max-content;
+        margin-top: -1rem;
     }
     .navbar-nav a{
         color: black;
@@ -292,7 +294,7 @@ textarea{
     }
 
 }
-@media (max-width :812px){
+/* @media (max-width :812px){
     .nav-item{
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -321,4 +323,4 @@ textarea{
         border-radius: .5rem;
         
     }
-}
+} */
