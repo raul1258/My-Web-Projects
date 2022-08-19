@@ -9,6 +9,7 @@ body{
     background-image: url(./images/home-bg.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
 }
 .navbar-nav{
     font-size: 1.1rem;
@@ -170,9 +171,9 @@ span i{
     border-radius: .5rem;
     
 }
-.pricing .box:nth-child(2){
+/* .pricing .box:nth-child(2){
         transform: scale(1.2);
-}
+} */
 .pricing .box .list{
     padding-top: 2rem;
 }
@@ -238,7 +239,9 @@ textarea{
     width: 20rem;
     border: 1px solid black;
 }
-@media (max-width :800px){
+
+
+@media (max-width :991px){
     header{
         background: white;
         height: 4rem;
@@ -299,6 +302,19 @@ textarea{
     }
 
 }
+
+@media (min-width :992px){
+
+    .navbar-nav{
+        margin-bottom: 1rem;  
+        width: max-content;
+    }
+
+
+
+
+}
+
 /* @media (max-width :812px){
     .nav-item{
         font-size: 1rem;
