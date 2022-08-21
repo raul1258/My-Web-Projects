@@ -7,7 +7,7 @@
     /* background-image: url(./images/bgtrainer.jpg); */
     /* background-repeat: no-repeat; */
     background-size: cover;
-    color: #f9f0ed;
+    /* color: #f9f0ed; */
 }
 .container{
     width: 80vw;
@@ -38,6 +38,7 @@ img{
 .btnhome{
     display:flex;
     justify-content: center;
+    color: black;
 }
 
 @media (max-width :426px){

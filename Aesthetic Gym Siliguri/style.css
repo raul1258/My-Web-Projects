@@ -11,6 +11,14 @@ body{
     background-repeat: no-repeat;
     font-family: 'Times New Roman', Times, serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
 .navbar-nav{
     font-size: 1.1rem;
     padding-top: .5rem;
