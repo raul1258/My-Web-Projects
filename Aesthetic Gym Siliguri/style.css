@@ -317,6 +317,10 @@ textarea{
         margin-bottom: 1rem;  
         width: max-content;
     }
+    .carousel-item{
+        height: 40rem;
+        width: 40rem;
+    }
 
 
 
