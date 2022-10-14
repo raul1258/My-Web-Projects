@@ -35,6 +35,8 @@ function TextForm(props) {
     <Button variant="primary" onClick={handleUpClick}>Convert to UpperCase</Button>{' '}
     <Button variant="primary" onClick={handleLoClick}>Convert to LowerCase</Button>{' '}
     <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
+    <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
+    <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
 
     </div>
 
