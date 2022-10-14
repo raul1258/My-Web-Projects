@@ -16,6 +16,15 @@ function TextForm(props) {
     let newText = "";
     setText(newText);
 }
+const handleCopy = () => {
+  let text = document.getElementById("myBox");
+  text.select();
+  navigator.clipboard.writeText(text.value);
+}
+const handleExtraSpace = () => {
+  let newText = text.split(/[ ]+/);
+  setText(newText.join(" "));
+}
     const handleOnChnage = (event) => {
         setText(event.target.value);
     }
@@ -29,14 +38,14 @@ function TextForm(props) {
         <h1>{props.headings}</h1>
       <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Control as="textarea" rows={8} value={text} onChange={handleOnChnage} placeholder="Enter text here"/>
+        <Form.Control as="textarea" rows={8} value={text} onChange={handleOnChnage} id = "myBox" placeholder="Enter text here"/>
       </Form.Group>
     </Form>
     <Button variant="primary" onClick={handleUpClick}>Convert to UpperCase</Button>{' '}
     <Button variant="primary" onClick={handleLoClick}>Convert to LowerCase</Button>{' '}
     <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
-    <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
-    <Button variant="primary" onClick={handleClearClick}>Clear Text</Button>{' '}
+    <Button variant="primary" onClick={handleCopy}>CopyText</Button>{' '}
+    <Button variant="primary" onClick={handleExtraSpace}>Remove Extra Spaces</Button>{' '}
 
     </div>
 
