@@ -6,8 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Heading(props) {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
+    <Navbar bg={props.mode} expand="lg">
+      <Container fluid >
         <Navbar.Brand href="#">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -16,18 +16,17 @@ function Heading(props) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" >Home</Nav.Link>
+            <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
             
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
+          <Form className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>
+          <Form.Check 
+        type="switch"
+        id="custom-switch"
+        label="Enable Dark Mode"
+        onClick={props.toggleMode}
+      />
           </Form>
         </Navbar.Collapse>
       </Container>
