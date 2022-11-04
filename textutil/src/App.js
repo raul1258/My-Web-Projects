@@ -2,13 +2,15 @@
 import './App.css';
 import Heading from './components/Heading';
 import TextForm from './components/TextForm';
-// import About from './components/About';
+import About from './components/About';
 import React, {useState} from 'react';
 import Alerts from './components/Alerts';
+import {BrowserRouter, Routes} from "react-router-dom";
 
 
 
 function App() {
+ 
 
   const [mode, setMode] = useState('light'); // to see sether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
@@ -40,10 +42,10 @@ function App() {
       <Heading title="Text Utils" mode={mode} toggleMode={toggleMode}/>
       <Alerts alert={alert}/>
       <div className='container'>
+       
       <TextForm showAlert={showAlert} headings="Enter the text to Analyze" mode={mode}/>
       </div>
-      {/* <About/> */}
-    </>
+      </>
   );
 }
 
