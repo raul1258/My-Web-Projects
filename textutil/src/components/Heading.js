@@ -15,8 +15,8 @@ function Heading(props) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link to="/Home" className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>Home</Nav.Link>
-            <Nav.Link to="/about" className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>About</Nav.Link>
+            {/* <Nav.Link to="/Home" className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>Home</Nav.Link> */}
+            {/* <Nav.Link to="/about" className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>About</Nav.Link> */}
             
           </Nav>
           <Form className={`d-flex text-${props.mode==='light' ? 'dark':'light'}`}>
